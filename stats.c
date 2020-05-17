@@ -58,12 +58,20 @@ void print_statistics(unsigned char *array, unsigned int length)
 
 void print_array(unsigned char *array, unsigned int length)
 {
+  int count = 0;
   printf("Array is: \n");
   for(int i=0; i < length; i++)
   {
     printf("%d ", *(array+i));
+    count++;
+    if(count == 10)
+    {
+      printf("\n");
+      count = 0;
+    }
   }
 
+  printf("\n");
 
 }
 
