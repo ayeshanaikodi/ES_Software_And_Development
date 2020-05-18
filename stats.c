@@ -62,7 +62,7 @@ void print_array(unsigned char *array, unsigned int length)
   printf("Array is: \n");
   for(int i=0; i < length; i++)
   {
-    printf("%d ", *(array+i));
+    printf("%d\t", *(array+i));
     count++;
     if(count == 10)
     {
